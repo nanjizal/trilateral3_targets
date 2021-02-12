@@ -1,0 +1,13 @@
+# some snipits from trilateral3 testing that maybe more target specific.
+## -lib heaps exclude heaps
+-lib openfl
+-lib nme
+--remap flash:nme
+# --remap flash:openfl
+#-lib nme ### have to comment out as nme is not dox safe.
+
+-v
+
+--macro allowPackage("flash")
+-D doc-gen
+-D lime-doc-gen
